@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <!-- Metadata -->
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>Maze 3D</title>
         <meta name="description" content="Maze 3D for WebGL with Three.js" />
         <meta name="author" content="Yannick Comte" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        
+        <!-- CSS Stylesheet -->
         <link rel="stylesheet" media="screen" href="assets/css/style.css" />
     </head>
     <body>
+        <!-- Preload Image -->
         <img style="display:none" src="assets/images/preview-laby.png" alt="sharing image" />
+        
+        <!-- Canvas Container -->
         <div id="canvasContainer">
+            <!-- Joypad for controlling -->
             <div id="joypad">
+                <!-- Joypad keys -->
                 <div class="top">
                     <span class="joykey" id="keyup"><img src="assets/images/pad/kbup.png" /></span>
                 </div>
@@ -23,14 +31,20 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Audio for bump sound -->
         <audio id="bumpSound">
             <source src="assets/sound/bat.mp3" />
             <source src="assets/sound/bat.ogg" />
         </audio>
+        
+        <!-- JavaScript Libraries -->
         <script src="assets/js/three.min.js"></script>
         <script src="assets/js/Demonixis.Input.js"></script>
         <script src="assets/js/Demonixis.Minimap.js"></script>
         <script src="assets/js/Demonixis.GameHelper.js"></script>
+        
+        <!-- Main JavaScript for maze3d -->
         <script src="assets/js/maze3d.js"></script>
     </body>
 </html>
